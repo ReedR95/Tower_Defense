@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd1fde1c-3606-4e8c-bd4f-6df1cc95e9ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_jdk14_1_6_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tower_Defense.spvchain" afterPath="$PROJECT_DIR$/Tower_Defense.spvchain" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tower_Defense.wallet" afterPath="$PROJECT_DIR$/Tower_Defense.wallet" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ground_tile.png" afterPath="$PROJECT_DIR$/resources/ground_tile.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Frame.java" afterPath="$PROJECT_DIR$/src/main/java/Frame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Menu.java" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Room.java" afterPath="$PROJECT_DIR$/src/main/java/Room.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tower_Defense.iml" afterPath="$PROJECT_DIR$/Tower_Defense.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Value.java" afterPath="$PROJECT_DIR$/src/main/java/Value.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Window.java" afterPath="$PROJECT_DIR$/src/main/java/Window.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/menu.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Tower_Defense.iws" />
@@ -27,7 +16,7 @@
     <file path="$PROJECT_DIR$/../hw10_temp/Square.java" changelist="bd1fde1c-3606-4e8c-bd4f-6df1cc95e9ac" time="1385937698767" ignored="false" />
     <file path="/Block.java" changelist="bd1fde1c-3606-4e8c-bd4f-6df1cc95e9ac" time="1386637170408" ignored="false" />
     <file path="/Value.java" changelist="bd1fde1c-3606-4e8c-bd4f-6df1cc95e9ac" time="1386637287132" ignored="false" />
-    <file path="/Dummy.txt" changelist="bd1fde1c-3606-4e8c-bd4f-6df1cc95e9ac" time="1386643867754" ignored="false" />
+    <file path="/Dummy.txt" changelist="bd1fde1c-3606-4e8c-bd4f-6df1cc95e9ac" time="1386701380432" ignored="false" />
     <file path="$PROJECT_DIR$/../Game/src/Player.java" changelist="bd1fde1c-3606-4e8c-bd4f-6df1cc95e9ac" time="1386041528085" ignored="false" />
     <file path="/Save.java" changelist="bd1fde1c-3606-4e8c-bd4f-6df1cc95e9ac" time="1386279058744" ignored="false" />
     <file path="/Store.java" changelist="bd1fde1c-3606-4e8c-bd4f-6df1cc95e9ac" time="1386529084330" ignored="false" />
@@ -665,11 +654,16 @@
       <created>1385934392925</created>
       <updated>1385934392925</updated>
     </task>
+    <task id="LOCAL-00001" summary="Bitcoin support">
+      <created>1386701391637</created>
+      <updated>1386701391637</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -684,7 +678,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33225283" sideWeight="0.7472952" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25283632" sideWeight="0.68501526" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25283632" sideWeight="0.68501526" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3149847" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -735,7 +729,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bitcoin support" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -749,6 +743,7 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="Bitcoin support" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
