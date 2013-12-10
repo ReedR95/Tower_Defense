@@ -6,7 +6,9 @@ import java.awt.image.CropImageFilter;
 import java.awt.image.FilteredImageSource;
 import java.io.File;
 
-public class Window extends JPanel {
+public class Window extends JPanel implements Runnable {
+
+    public Thread thread = new Thread(this);
 
     public static Image[] ground_tile = new Image[100];
     public static Image[] air_tile = new Image[100];
@@ -37,12 +39,14 @@ public class Window extends JPanel {
         this.addMouseListener(new KeyHandler());
         this.addMouseMotionListener(new KeyHandler());
 
-        Timer timer = new Timer(1, new ActionListener(){
-            public void actionPerformed(ActionEvent e){
-                tick();
-            }
-        });
-        timer.start();
+        thread.start();
+
+//        Timer timer = new Timer(1, new ActionListener(){
+//            public void actionPerformed(ActionEvent e){
+//                tick();
+//            }
+//        });
+//        timer.start();
     }
 
     public static void hasWon() {
@@ -164,35 +168,72 @@ public class Window extends JPanel {
         }
     }
 
-    public void tick() {
-        if (!isFirst && health > 0 && !isWon) {
-            room.physic();
-            enemySpawner();
+    public void run() {
+        while (true) {
+            if (!isFirst && health > 0 && !isWon) {
+                room.physic();
+                enemySpawner();
 
-            for (int i = 0; i < enemies.length; i++) {
-                if (enemies[i].inGame) {
-                    enemies[i].move();
-                }
-            }
-        } else {
-            if (isWon) {
-                if(winFrame >= winTime) {
-                    if (level == maxLevel) {
-                        System.exit(0);
-                    } else {
-                        level++;
-                        define();
-                        isWon = false;
+                for (int i = 0; i < enemies.length; i++) {
+                    if (enemies[i].inGame) {
+                        enemies[i].move();
                     }
+                }
+            } else {
+                if (isWon) {
+                    if(winFrame >= winTime) {
+                        if (level == maxLevel) {
+                            System.exit(0);
+                        } else {
+                            level++;
+                            define();
+                            isWon = false;
+                        }
 
-                    winFrame = 0;
-                } else {
-                    winFrame +=1;
+                        winFrame = 0;
+                    } else {
+                        winFrame +=1;
+                    }
                 }
             }
-        }
 
-        repaint();
+            repaint();
+
+            try {
+                Thread.sleep(1);
+            } catch (Exception e) {}
+        }
     }
+
+//    public void tick() {
+//        if (!isFirst && health > 0 && !isWon) {
+//            room.physic();
+//            enemySpawner();
+//
+//            for (int i = 0; i < enemies.length; i++) {
+//                if (enemies[i].inGame) {
+//                    enemies[i].move();
+//                }
+//            }
+//        } else {
+//            if (isWon) {
+//                if(winFrame >= winTime) {
+//                    if (level == maxLevel) {
+//                        System.exit(0);
+//                    } else {
+//                        level++;
+//                        define();
+//                        isWon = false;
+//                    }
+//
+//                    winFrame = 0;
+//                } else {
+//                    winFrame +=1;
+//                }
+//            }
+//        }
+//
+//        repaint();
+//    }
 
 }

@@ -40,9 +40,6 @@ public class Frame extends JFrame {
         if (params == RegTestParams.get()) {
             bitcoin.connectToLocalHost();
         }
-//        else if (params == MainNetParams.get()) {
-//            bitcoin.setCheckpoints(getClass().getResourceAsStream("/Developer/CIS 120/Tower_Defense/resources/checkpoints"));
-//        }
 
         bitcoin.startAndWait();
 
@@ -60,6 +57,8 @@ public class Frame extends JFrame {
 
                 CardLayout cl = (CardLayout)(Frame.cards.getLayout());
                 cl.show(Frame.cards, "GAME");
+
+                bitcoin.stopAndWait();
             }
         });
 
@@ -69,7 +68,7 @@ public class Frame extends JFrame {
     public void init() {
         setLayout(new GridLayout(1, 1, 0, 0));
 
-        Menu menu = new Menu();
+        Menu menu = new Menu(new BorderLayout());
         Window window = new Window(this);
 
         cards = new JPanel(new CardLayout());
